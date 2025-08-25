@@ -28,10 +28,18 @@ export class ImageNodeView {
   private createElements(): ImageElements {
     const wrapper = document.createElement('div');
     wrapper.classList.add('image-plus-wrapper');
+    
     const container = document.createElement('div');
     container.classList.add('image-plus-container');
+    container.style.maxHeight = '100%';
+    container.style.overflow = 'visible';
+    
     const img = document.createElement('img');
     img.classList.add('image-plus-img');
+    img.style.maxHeight = '100%';
+    img.style.overflow = 'visible';
+
+
     return {
       wrapper,
       container,

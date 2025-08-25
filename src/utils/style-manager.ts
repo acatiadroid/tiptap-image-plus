@@ -16,7 +16,7 @@ export class StyleManager {
     const width = inline ? '66px' : '100px';
     return `
       position: absolute; 
-      top: 0%; 
+      top: 15px; 
       left: 50%; 
       width: ${width}; 
       height: ${CONSTANTS.CONTROLLER_HEIGHT}; 

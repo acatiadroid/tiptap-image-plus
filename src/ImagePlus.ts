@@ -29,9 +29,9 @@ export const ImagePlus = Image.extend<ImagePlusOptions>({
         },
       },
       alignment: {
-        default: 'left',
+        default: 'center',
         parseHTML: (element) => {
-          return element.getAttribute('alignment') || 'left';
+          return element.getAttribute('alignment') || 'center';
         },
       }
     };
