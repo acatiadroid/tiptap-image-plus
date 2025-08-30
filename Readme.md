@@ -4,6 +4,9 @@
 
 An advanced image extension for [Tiptap](https://tiptap.dev/) editor with extra options like resize, align, caption, and more. Easily add rich image editing features to your Tiptap editor.
 
+Documentation : http://romikmakavana.me/tiptap/image-plus
+Example : http://romikmakavana.me/tiptap/image-plus/example
+
 ## Features
 
 - Resize images with drag handles
@@ -14,15 +17,25 @@ An advanced image extension for [Tiptap](https://tiptap.dev/) editor with extra 
 
 ## Installation
 
+You must install this package along with its peer dependency:
+
 ```bash
-npm install tiptap-image-plus
+npm install tiptap-image-plus @tiptap/extension-image
 ```
 
 or
 
 ```bash
-yarn add tiptap-image-plus
+yarn add tiptap-image-plus @tiptap/extension-image
 ```
+
+## Peer Dependencies
+
+This package requires the following peer dependencies to be installed in your project:
+
+- [@tiptap/extension-image](https://www.npmjs.com/package/@tiptap/extension-image)
+
+Make sure to install them to ensure everything works correctly.
 
 ## Usage
 
@@ -34,8 +47,12 @@ const editor = new Editor({
 	extensions: [
 		ImagePlus.configure({
 			// Optional: custom options
-			wrapperStyle: { display: 'flex', width: '100%' },
-			containerStyle: { cursor: 'pointer' },
+			wrapperStyle: {},
+			containerStyle: {
+                background: "linear-gradient(90deg,rgba(30, 88, 117, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%)",
+                padding: "25px",
+                borderRadius: "10px",
+            },
 		}),
 		// ...other extensions
 	],
@@ -57,6 +74,7 @@ ImagePlus.configure({
 	containerStyle: {  },
 })
 ```
+
 
 ## License
 

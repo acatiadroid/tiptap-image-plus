@@ -51,6 +51,8 @@ export class StyleManager {
       height: ${dotSize}px; 
       border: 1.5px solid ${CONSTANTS.COLORS.BORDER}; 
       border-radius: 50%; 
+      box-shadow: 2px 2px 5px black;
+      background-color: white;
       ${positions[index]}
     `
       .replace(/\s+/g, ' ')

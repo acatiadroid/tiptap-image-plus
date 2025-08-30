@@ -1,6 +1,6 @@
 {
   "name": "tiptap-image-plus",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Tiptap image extension with extra options like resize, align, caption, and more.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
