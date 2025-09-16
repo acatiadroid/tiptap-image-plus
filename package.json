@@ -4,6 +4,10 @@
   "description": "Tiptap image extension with extra options like resize, align, caption, and more.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "build": "tsc"
